@@ -18,9 +18,7 @@ for i in range(len(dict)):
     a = int(a)
     b = int(b)
     c = int(c)
-
-    sum = (a+b)
-
+    
     if a+b > c and b+c > a and a+c > b:
         counter = counter + 1
         print (counter)
