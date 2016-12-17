@@ -34,13 +34,9 @@ for i in range(len(inputlist)):
     checksecid = checksecid.split("["[-1].replace(']',''))
 
     checksum = checksecid[1]
-    sectorid = checksecid[0]
-    sectorid = int(sectorid)
-
-
-
+    sectorid = int(checksecid[0])
     decrypted = decrypt(sectorid, name)
-    #print (decrypted)
+
     if "north" in decrypted:
         print("Sectorid:" +str(sectorid))
 
